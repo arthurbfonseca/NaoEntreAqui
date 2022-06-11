@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Não entre aqui</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+<style type="text/css">
+    header {
+        text-align:center;
+        color:white;
+        position:relative;
+        top:40px;
+    }
+    
+    body {
+        font-family: 'Bree Serif', serif;
+        background-image: linear-gradient(to bottom right, rgb(16, 1, 50), rgb(77, 2, 135));
+        margin:0px;
+    }
+
+    #heart {
+        width:80px;
+        position:relative;
+        bottom:50px;
+        left: 410px;
+        transform: rotate(45deg)
+    }
+
+    #heart2 {
+        width:80px;
+        position:relative;
+        bottom:135px;
+        right: 410px;
+        transform: rotate(315deg)
+    }
+
+	.carta-container{
+		perspective:1100; /*Esta propriedade especifica quantos pixels serão usados para renderização do giro 3D*/
+		-webkit-perspective: 1100; /* Chrome, Safari, Opera */
+        display:inline-block;
+        width:600px;
+        text-align:center;
+        align-items:center;
+        position:relative;
+        left:83px;
+        bottom:60px;
+		}
+	.carta{
+		position:relative;
+		width:221px;
+		height:500px;
+		color:white;
+		text-align:center;
+		line-height:200px;
+		margin:10px;
+		transition:all 0.6s ease;
+		transform-style: preserve-3d;
+		-webkit-transform-style: preserve-3d; /* Chrome, Safari, Opera */
+        border-radius:15px;
+		display:inline-block;
+		}
+	
+	.carta:active{
+		transform:rotateY(180deg);
+		}
+		
+	.verso{
+		transform:rotateY(180deg);
+	}
+	
+	.frente, .verso{
+		position:absolute;
+        display:block;
+        margin: 0 auto 0 auto;
+		top:0;
+		left:0;
+		width:290px;
+		height:420px;
+		background-color:rgb(20, 20, 21);
+		backface-visibility:hidden; /*Essa propriedade faz com que a parte oposta da carta não seja mostrada, caso contrário veria as duas faces, uma justaposta a outra*/
+        border-radius:10px;
+        margin: 0 50px 0 50px;
+		}
+	h1{
+		margin:0;
+		}
+
+    .verso img {
+        position:relative;
+        top:50px;
+        align-items:center;
+        width: 221px;
+        height: 320px;
+        border: 3px solid white;
+        border-radius:10px;
+    }
+
+    #nerd {
+        width:250px;
+        height:290px;
+    }
+
+    #nhoc {
+        width:250px;
+        height:250px;
+    }
+
+    #familia {
+        width:250px;
+        height:250px;
+    }
+
+    h2 {
+        position:relative;
+        bottom:144px;
+        color:white;
+    }
+
+    #cozinheira {
+        position:relative;
+        bottom:335px;
+    }
+
+    footer {
+        background-color:#141414;
+        color:white;
+        text-align:center;
+        padding:10px;
+        font-size:12px;
+        margin:0;
+        border: 3px solid #141414;
+    }
+
+    footer h1 {
+        word-spacing: 5px;
+    }
+
+    @media screen and (max-width: 480px) {
+        .carta-container , .carta {
+            width: auto;    
+        }
+    }
+</style>
+
+</head>
+
+<header>
+    <h1>Vire as cartas e veja os motivos pelos quais eu te amo</h1>
+    <div>
+        <img id="heart" src="heart.png">
+    </div>
+    <div>
+        <img id="heart2" src="heart.png">
+    </div>
+</header>
+
+<body>
+        <div class="carta-container">
+            <div class="carta">
+                <div class="frente">
+                    <h1>1º</h1>
+                    <h1>♡</h1>
+                </div>
+                <div class="verso">
+                    <img id="nerd" src="ThataNerd.png">
+                    <h2>Sua determinação</h2>
+                </div>
+            </div>
+        </div>
+    
+        <div class="carta-container">
+            <div class="carta">
+                <div class="frente">
+                    <h1>2º</h1>
+                    <h1>♡</h1>
+                </div>
+                <div class="verso">
+                    <img src="Thataminha.jpeg">
+                    <h2>Você é linda</h2>
+                </div>
+            </div>
+        </div>
+    
+        <div class="carta-container">
+            <div class="carta">
+                <div class="frente">
+                    <h1>3º</h1>
+                    <h1>♡</h1>
+                </div>
+                <div class="verso">
+                    <img src="top.jpeg">
+                    <h2>Nossos encontros</h2>
+                </div>
+            </div>
+        </div>
+    
+        <div class="carta-container">
+            <div class="carta">
+                <div class="frente">
+                    <h1>4º</h1>
+                    <h1>♡</h1>
+                </div>
+                <div class="verso">
+                    <img id="familia" src="familia.png">
+                    <h2>Amo sua família</h2>
+                </div>
+            </div>
+        </div>
+    
+        <div class="carta-container">
+            <div class="carta">
+                <div class="frente">
+                    <h1>5º</h1>
+                    <h1>♡</h1>
+                </div>
+                <div class="verso">
+                    <img src="inicio.png">
+                    <h2>Amo nossa história</h2>
+                </div>
+            </div>
+        </div>
+    
+        <div class="carta-container">
+            <div class="carta">
+                <div class="frente">
+                    <h1>6º</h1>
+                    <h1>♡</h1>
+                </div>
+                <div class="verso">
+                    <img src="gostosa.jpg">
+                    <h2>Você é muito gostosa</h2>
+                </div>
+            </div>
+        </div>
+    
+        <div class="carta-container">
+            <div class="carta">
+                <div class="frente">
+                    <h1>7º</h1>
+                    <h1>♡</h1>
+                </div>
+                <div class="verso">
+                    <img id="nhoc" src="nhoc.jpeg">
+                    <h2>Você é uma ótima</h2>
+                    <h2 id="cozinheira">cozinheira</h2>
+                </div>
+            </div>
+        </div>
+    
+        <div class="carta-container">
+            <div class="carta">
+                <div class="frente">
+                    <h1>8º</h1>
+                    <h1>♡</h1>
+                </div>
+                <div class="verso">
+                    <img src="romantica.jpeg">
+                    <h2>Nossa paixão</h2>
+                </div>
+            </div>
+        </div>
+
+</body>
+<footer>
+    <h1>♡ Esses  são  apenas  alguns  dos  infinitos  motivos  pelos  quais  eu  te  amo. Obrigado  por  tudo,  minha  chuchuzinha  ♡</h1>
+</footer>
+</html>
